@@ -26,3 +26,19 @@ let dubbelClick = document.querySelector('a:nth-of-type(2)')
 dubbelClick.addEventListener('dblclick', jumpBackground)
 
 // End Dubbel click
+
+
+
+
+// Key down > Met key down krijgt de 3e button een andere kleur achtergrond
+let keyDownColor = document.querySelector('a:nth-of-type(3)')
+
+keyDownColor.addEventListener("keydown", (event) => {});
+
+onkeydown = (event) => {
+  console.log('key is pressed down');
+  keyDownColor.classList.toggle('changeBackground');
+};
+
+
+// End Dubbel click
