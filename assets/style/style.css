@@ -79,3 +79,8 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+.click {
+  background-color: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
