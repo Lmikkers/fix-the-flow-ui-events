@@ -20,6 +20,8 @@ function jumpBackground() {
 
 
 
+
+
 // Dubbel click > Met dubbel click krijgt de 2e button een andere kleur achtergrond
 let dubbelClick = document.querySelector('a:nth-of-type(2)')
 
@@ -39,6 +41,30 @@ onkeydown = (event) => {
   console.log('key is pressed down');
   keyDownColor.classList.toggle('changeBackground');
 };
+// End key down
 
 
-// End Dubbel click
+
+
+
+// Long press
+let longPressColor = document.querySelector('a:nth-of-type(4)') 
+
+longPressColor.addEventListener('long-press', jumpBackground);
+// end Long press
+
+
+
+
+
+// DeviceMotionEvent 
+let buttonFive = document.querySelector('a:nth-of-type(5)')
+
+
+buttonFive.addEventListener("devicemotion", (event) => {});
+
+ondevicemotion = (event) => {
+  console.log('device is motion');
+  buttonFive.classList.toggle('changeBackground');
+};
+// End DeviceMotionEvent
