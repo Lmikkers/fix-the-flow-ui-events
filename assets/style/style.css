@@ -79,7 +79,7 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
-.click {
+.changeBackground {
   background-color: var(--highlight-secondary);
   color: var(--secondary);
   border-color: var(--secondary);
