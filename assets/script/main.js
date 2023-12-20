@@ -68,3 +68,18 @@ ondevicemotion = (event) => {
   buttonFive.classList.toggle('changeBackground');
 };
 // End DeviceMotionEvent
+
+
+
+// Button 6 turn 
+let buttonSix = document.querySelector('a:nth-of-type(6)')
+
+
+buttonSix.addEventListener('click', turnButton)
+
+function turnButton() {
+  console.log('turn contact');
+  this.classList.toggle('turnContact')
+}
+
+// End button 6 turn
